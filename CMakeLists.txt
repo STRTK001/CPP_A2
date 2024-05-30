@@ -27,7 +27,8 @@ add_executable (A2
  "DiseaseAlertLevelCalculator.h" "IDiseaseCalculationStrategy.h" 
  "DiseaseAlertLevelCalculator.cpp" "AmogusSusCalculation.h" 
  "NoCapSyndromeCalculation.h" "TiccToccBrainDamageCalculation.h" 
- "ERushCalculation.h" "Utility.h" "AlertLevelCalculatorComponent.h" "LeafAlertLevelCalculator.h" "LeafAlertLevelCalculator.cpp")
+ "ERushCalculation.h" "Utility.h" "AlertLevelCalculatorComponent.h" 
+ "LeafAlertLevelCalculator.h" "LeafAlertLevelCalculator.cpp" "CompositeAlertLevelCalculator.h" "CompositeAlertLevelCalculator.cpp")
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
   set_property(TARGET A2 PROPERTY CXX_STANDARD 20)

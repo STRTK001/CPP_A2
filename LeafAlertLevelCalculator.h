@@ -1,16 +1,13 @@
 #ifndef LEAFALERTLEVELCALCULATOR_H
 #define LEAFALERTLEVELCALCULATOR_H
 
-#include <memory>
-
 #include "AlertLevelCalculatorComponent.h"
-#include "IDiseaseCalculationStrategy.h"
 
 class LeafAlertLevelCalculator : public AlertLevelCalculatorComponent
 {
 public:
-	LeafAlertLevelCalculator();
-	virtual AlertLevel calculateAlertLevel(Patient* patient) const override;
+	LeafAlertLevelCalculator(std::shared_ptr<IDiseaseCalculationStrategy> calculationStrategy);
+	virtual void calculateHighestAlertLevel(Patient* patient,AlertLevel highestAlertLevel) const override;
 
 private:
 	std::shared_ptr<IDiseaseCalculationStrategy> _calculationStrategy;

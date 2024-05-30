@@ -108,8 +108,8 @@ void PatientManagementSystem::addVitalsRecord()
         Vitals* v = new Vitals(heartRate, oxygenSaturation, bodyTemperature, brainActivity);
         _patientLookup[pid]->addVitals(v);
         //calculate the most recent record's alert level.
-        _diseaseAlertLevelCalculator.get()->calculateAlertLevel(_patientLookup[pid]);
-        cout << _patientLookup[pid]->firstName() << "'s alertLevel is: " << strtk001Utils::enumToString(_patientLookup[pid]->alertLevel()) << std::endl;
+        //_diseaseAlertLevelCalculator.get()->calculateAlertLevel(_patientLookup[pid]); <-- i guess fr2 makes this obsolete?
+        _diseaseAlertLevelCalculator->calculateHighestAlertLevel(_patientLookup[pid]);
     }
     else {
         cout << "Patient not found" << endl;

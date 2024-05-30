@@ -1,13 +1,16 @@
 #ifndef ALERTLEVELCALCULATORCOMPONENT_H
 #define ALERTLEVELCALCULATORCOMPONENT_H
 
-#include "PatientAlertLevel.h"
+#include <memory>
+
+#include "PatientAlertLevels.h"
 #include "Patient.h"
+#include "IDiseaseCalculationStrategy.h"
 
 class AlertLevelCalculatorComponent
 {
 public:
-	virtual AlertLevel calculateAlertLevel(Patient* patient) const = 0;
+	virtual void calculateHighestAlertLevel(Patient* patient,AlertLevel heighestAlertLevel) const = 0;
 };
 
 #endif 
