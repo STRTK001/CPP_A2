@@ -42,10 +42,15 @@ void DiseaseAlertLevelCalculator::calculateHighestAlertLevel(Patient* patient)
 	{
 		//find the coresponding strategy in our calculaton strategies map 
 		std::shared_ptr<IDiseaseCalculationStrategy> strategy = _calculationStrategies[disease];
+
 		if (strategy.get() != nullptr)
 		{
 			//populate the composite calculator with the coresponding strategy
 			calculatorComposite->addChild(std::make_unique<LeafAlertLevelCalculator>(strategy));
+		}
+		else
+		{
+			strtk001Utils::logError("cant find strategy for disease: " + disease);
 		}
 	}
 	//init our highest alert level to green as a default
@@ -54,4 +59,5 @@ void DiseaseAlertLevelCalculator::calculateHighestAlertLevel(Patient* patient)
 	calculatorComposite->calculateHighestAlertLevel(patient, highestAlertLevel);
 	//set the patient's alert level to the alertLevel we have calculated
 	patient->setAlertLevel(highestAlertLevel);
+	strtk001Utils::logError("the highestAlertLevel is: " + strtk001Utils::enumToString(highestAlertLevel));
 }

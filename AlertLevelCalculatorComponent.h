@@ -10,7 +10,7 @@
 class AlertLevelCalculatorComponent
 {
 public:
-	virtual void calculateHighestAlertLevel(Patient* patient,AlertLevel heighestAlertLevel) const = 0;
+	virtual void calculateHighestAlertLevel(Patient* patient,AlertLevel& heighestAlertLevel) const = 0;
 };
 
 #endif 

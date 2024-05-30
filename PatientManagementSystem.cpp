@@ -12,6 +12,7 @@
 #include "HospitalAlertSystemFacade.h"
 
 #include "DiseaseAlertLevelCalculator.h"
+#include "PatientAlertListener.h"
 
 #include "Utility.h"
 
@@ -20,8 +21,8 @@ using namespace std;
 
 PatientManagementSystem::PatientManagementSystem() :
     _patientDatabaseLoader(std::make_unique<PatientDatabaseLoader>()),
-    _hospitalAlertSystem(std::make_unique<HospitalAlertSystemFacade>()),
-    _gpNotificationSystem(std::make_unique<GPNotificationSystemFacade>()),
+    _hospitalAlertSystem(std::make_shared<HospitalAlertSystemFacade>()),
+    _gpNotificationSystem(std::make_shared<GPNotificationSystemFacade>()),
     _diseaseAlertLevelCalculator(std::make_unique<DiseaseAlertLevelCalculator>())
 {
     _patientDatabaseLoader->initialiseConnection();
@@ -43,9 +44,13 @@ void PatientManagementSystem::init()
     for (Patient* p : _patients) {
         _patientLookup[p->uid()] = p;
     }
-
-    for (Patient* p : _patients) {
-        // TODO: do any processing you need here
+    
+    for (Patient* p : _patients) 
+    {
+        //subscribe the hospital alert system
+        p->addListener(std::weak_ptr<PatientAlertListener>(_hospitalAlertSystem));
+        //subscribe the gp notification system
+        p->addListener(std::weak_ptr<PatientAlertListener>(_gpNotificationSystem));
     }
 }
 

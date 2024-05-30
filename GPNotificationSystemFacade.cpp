@@ -2,7 +2,6 @@
 
 #include <iostream>
 
-
 GPNotificationSystemFacade::GPNotificationSystemFacade()
 { }
 
@@ -17,4 +16,10 @@ void GPNotificationSystemFacade::sendGPNotificationForPatient(Patient* p)
         std::cout << "This is an notification to the GPs:" << std::endl;
         std::cout << "Patient: " << p->humanReadableID() << " should be followed up" << std::endl;
     }
+}
+
+
+void GPNotificationSystemFacade::update(Patient* patient)
+{
+    sendGPNotificationForPatient(patient);
 }

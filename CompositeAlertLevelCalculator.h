@@ -9,7 +9,7 @@ class CompositeAlertLevelCalculator : public AlertLevelCalculatorComponent
 {
 public:
     void addChild(std::unique_ptr<AlertLevelCalculatorComponent> component);
-    void calculateHighestAlertLevel(Patient* patient, AlertLevel highestAlertLevel) const override;
+    void calculateHighestAlertLevel(Patient* patient, AlertLevel& highestAlertLevel) const override;
 private:
     std::vector<std::unique_ptr<AlertLevelCalculatorComponent>> _children;
 };

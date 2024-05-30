@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>9</zoom_level>
+  <zoom_level>6</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>846</x>
-      <y>639</y>
-      <w>360</w>
-      <h>225</h>
+      <x>336</x>
+      <y>390</y>
+      <w>240</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>PatientManagementSystem
 --
@@ -30,26 +30,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>117</x>
-      <y>198</y>
-      <w>270</w>
-      <h>81</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;interface&gt;&gt;
-/AlertLevelCalculatorComponent/
---
-
---
-+ calculateAlertLevel(Patient*): AlertLevel</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>594</x>
-      <y>630</y>
-      <w>198</w>
-      <h>99</h>
+      <x>168</x>
+      <y>384</y>
+      <w>132</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>/AbstractPatientDatabaseLoader/
 --
@@ -64,10 +48,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>603</x>
-      <y>792</y>
-      <w>171</w>
-      <h>72</h>
+      <x>174</x>
+      <y>492</y>
+      <w>114</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>PatientDatabaseLoader
 --
@@ -79,10 +63,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>783</x>
-      <y>657</y>
-      <w>81</w>
-      <h>27</h>
+      <x>294</x>
+      <y>402</y>
+      <w>54</w>
+      <h>18</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;</panel_attributes>
     <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
@@ -90,10 +74,10 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>675</x>
-      <y>720</y>
-      <w>27</w>
-      <h>90</h>
+      <x>222</x>
+      <y>444</y>
+      <w>18</w>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;</panel_attributes>
     <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
@@ -101,10 +85,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1269</x>
-      <y>648</y>
-      <w>198</w>
-      <h>216</h>
+      <x>666</x>
+      <y>378</y>
+      <w>132</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>Patient
 --
@@ -126,10 +110,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1278</x>
-      <y>459</y>
-      <w>135</w>
-      <h>126</h>
+      <x>672</x>
+      <y>210</y>
+      <w>90</w>
+      <h>84</h>
     </coordinates>
     <panel_attributes>Person
 --
@@ -145,10 +129,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1269</x>
-      <y>963</y>
-      <w>171</w>
-      <h>180</h>
+      <x>666</x>
+      <y>582</y>
+      <w>114</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>Vitals
 --
@@ -168,14 +152,12 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1017</x>
-      <y>990</y>
-      <w>243</w>
-      <h>99</h>
+      <x>456</x>
+      <y>282</y>
+      <w>162</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>GPNotificationSystemFacade
---
-
 --
 + GPNotificationSystemFacade()
 + ~GPNotificationSystemFacade()
@@ -186,14 +168,12 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>720</x>
-      <y>990</y>
-      <w>234</w>
-      <h>99</h>
+      <x>282</x>
+      <y>282</y>
+      <w>156</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>HospitalNotificationSystemFacade
---
-
 --
 + HospitalNotificationSystemFacade()
 + ~HospitalNotificationSystemFacade()
@@ -203,65 +183,32 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1332</x>
-      <y>576</y>
-      <w>27</w>
-      <h>90</h>
+      <x>708</x>
+      <y>288</y>
+      <w>18</w>
+      <h>102</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;150.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1197</x>
-      <y>657</y>
-      <w>90</w>
-      <h>27</h>
+      <x>714</x>
+      <y>516</y>
+      <w>18</w>
+      <h>78</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;</panel_attributes>
-    <additional_attributes>80.0;10.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1341</x>
-      <y>855</y>
-      <w>27</w>
-      <h>126</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1017</x>
-      <y>855</y>
-      <w>126</w>
-      <h>153</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;</panel_attributes>
-    <additional_attributes>120.0;150.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>828</x>
-      <y>855</y>
-      <w>135</w>
-      <h>153</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;150.0;130.0;10.0</additional_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1053</x>
-      <y>225</y>
-      <w>225</w>
-      <h>63</h>
+      <x>642</x>
+      <y>726</y>
+      <w>150</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Interface&gt;&gt;
 /IDiseaseCalculationStrategy/
@@ -272,15 +219,14 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>603</x>
-      <y>225</y>
-      <w>387</w>
-      <h>99</h>
+      <x>318</x>
+      <y>606</y>
+      <w>258</w>
+      <h>78</h>
     </coordinates>
     <panel_attributes>DiseaseAlertCalculator
 --
 - _calculationStrategies: map&lt;string,IDiseaseCalculationStrategy&gt;
-- _calculatorComposite: AlertLevelCalculatorComponent*
 --
 + DiseaseAlertLevelCalculator()
 + calculateAlertLevel(Patient*)
@@ -288,34 +234,12 @@
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>909</x>
-      <y>315</y>
-      <w>27</w>
-      <h>342</h>
-    </coordinates>
-    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;360.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>981</x>
-      <y>243</y>
-      <w>90</w>
-      <h>27</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1539</x>
-      <y>351</y>
-      <w>153</w>
-      <h>45</h>
+      <x>486</x>
+      <y>822</y>
+      <w>102</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>ERushCalculation
 --
@@ -326,10 +250,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>945</x>
-      <y>351</y>
-      <w>153</w>
-      <h>45</h>
+      <x>882</x>
+      <y>822</y>
+      <w>102</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>AmogusSusCalculation
 --
@@ -340,10 +264,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1116</x>
-      <y>351</y>
-      <w>189</w>
-      <h>45</h>
+      <x>750</x>
+      <y>822</y>
+      <w>126</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>NoCapSyndromeCalculation
 --
@@ -354,10 +278,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1323</x>
-      <y>351</y>
-      <w>207</w>
-      <h>45</h>
+      <x>606</x>
+      <y>822</y>
+      <w>138</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>TiccToccBrainDamageCalculation
 --
@@ -366,45 +290,144 @@
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
+    <id>UMLClass</id>
     <coordinates>
-      <x>1161</x>
-      <y>279</y>
-      <w>27</w>
-      <h>63</h>
+      <x>0</x>
+      <y>0</y>
+      <w>60</w>
+      <h>42</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>999</x>
-      <y>315</y>
-      <w>630</w>
-      <h>54</h>
-    </coordinates>
-    <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>10.0;40.0;10.0;10.0;680.0;10.0;680.0;40.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>1179</x>
-      <y>315</y>
-      <w>279</w>
-      <h>54</h>
-    </coordinates>
-    <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>10.0;40.0;10.0;10.0;290.0;10.0;290.0;40.0</additional_attributes>
+    <panel_attributes>SimpleClass
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>351</y>
-      <w>351</w>
-      <h>81</h>
+      <x>390</x>
+      <y>174</y>
+      <w>108</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+/PatientAlertListener/
+--
++ update(Patient*)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>210</y>
+      <w>90</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;70.0;130.0;70.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>432</x>
+      <y>246</y>
+      <w>108</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>160.0;60.0;160.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>378</x>
+      <y>342</y>
+      <w>18</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>342</y>
+      <w>18</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>492</x>
+      <y>192</y>
+      <w>186</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;250.0;10.0;250.0;380.0;290.0;380.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>438</x>
+      <y>534</y>
+      <w>18</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>468</y>
+      <w>108</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>160.0;10.0;60.0;10.0;60.0;250.0;10.0;250.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>570</x>
+      <y>444</y>
+      <w>108</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>156</x>
+      <y>708</y>
+      <w>180</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+/AlertLevelCalculatorComponent/
+--
++ calculateAlertLevel(Patient*): AlertLevel</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>240</x>
+      <y>810</y>
+      <w>234</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>LeafAlertLevelCalculator
 --
@@ -417,25 +440,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>342</x>
-      <y>54</y>
-      <w>90</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>SimpleClass
---
-
---
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>360</x>
-      <y>351</y>
-      <w>324</w>
-      <h>81</h>
+      <x>18</x>
+      <y>810</y>
+      <w>216</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>CompositeAlertLevelCalculator
 --
@@ -448,56 +456,111 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>198</x>
-      <y>270</y>
-      <w>27</w>
-      <h>99</h>
+      <x>120</x>
+      <y>858</y>
+      <w>216</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>340.0;10.0;340.0;50.0;10.0;50.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>156</x>
+      <y>756</y>
+      <w>90</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>lt=-&gt;&gt;</panel_attributes>
-    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;90.0;10.0;60.0;130.0;60.0;130.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>198</x>
-      <y>306</y>
-      <w>270</w>
-      <h>63</h>
+      <x>228</x>
+      <y>786</y>
+      <w>114</w>
+      <h>36</h>
     </coordinates>
     <panel_attributes>lt=-</panel_attributes>
-    <additional_attributes>280.0;50.0;280.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>170.0;40.0;170.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>522</x>
-      <y>144</y>
-      <w>603</w>
-      <h>225</h>
+      <x>540</x>
+      <y>762</y>
+      <w>180</w>
+      <h>72</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;230.0;10.0;10.0;650.0;10.0;650.0;90.0</additional_attributes>
+    <panel_attributes>lt=-&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;100.0;10.0;50.0;280.0;50.0;280.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>153</x>
-      <y>423</y>
-      <w>342</w>
-      <h>81</h>
+      <x>372</x>
+      <y>750</y>
+      <w>282</w>
+      <h>72</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>360.0;10.0;360.0;70.0;10.0;70.0;10.0;10.0</additional_attributes>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>450.0;10.0;10.0;10.0;10.0;100.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>378</x>
-      <y>216</y>
-      <w>243</w>
-      <h>63</h>
+      <x>702</x>
+      <y>786</y>
+      <w>234</w>
+      <h>48</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>250.0;50.0;10.0;10.0</additional_attributes>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>370.0;60.0;370.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>672</x>
+      <y>786</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>810</x>
+      <y>786</y>
+      <w>18</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>498</x>
+      <y>678</y>
+      <w>156</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>240.0;100.0;10.0;100.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>240</x>
+      <y>642</y>
+      <w>90</w>
+      <h>78</h>
+    </coordinates>
+    <panel_attributes>lt=-&gt;&gt;&gt;&gt;&gt;</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0;130.0;10.0</additional_attributes>
   </element>
 </diagram>

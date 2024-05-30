@@ -7,7 +7,9 @@
 
 #include "PatientAlertLevels.h"
 
+
 class Vitals;
+class PatientAlertListener;
 
 
 namespace Diagnosis {
@@ -49,12 +51,19 @@ public:
     void setAlertLevel(AlertLevel level);
     const AlertLevel alertLevel() const { return _alertLevel; }
 
+    void addListener(std::weak_ptr<PatientAlertListener> listner);
+
 protected:
     std::vector<std::string> _diagnosis;
     std::vector<const Vitals*> _vitals;
+    std::vector<std::weak_ptr<PatientAlertListener>> _listeners;
+
     AlertLevel _alertLevel;
 
+
     friend std::ostream& operator<<(std::ostream& os, const Patient& p);
+
+    void updateListeners();
 };
 
 #endif

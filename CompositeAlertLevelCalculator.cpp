@@ -6,7 +6,7 @@ void CompositeAlertLevelCalculator::addChild(std::unique_ptr<AlertLevelCalculato
 	_children.push_back(std::move(component));
 }
 
-void CompositeAlertLevelCalculator::calculateHighestAlertLevel(Patient* patient,AlertLevel highestAlertLevel) const
+void CompositeAlertLevelCalculator::calculateHighestAlertLevel(Patient* patient,AlertLevel& highestAlertLevel) const
 {
 	for(const auto& child : _children)
 	{

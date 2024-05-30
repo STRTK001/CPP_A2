@@ -22,7 +22,7 @@ namespace strtk001Utils
 
     inline void logError(std::string msg)
     {
-        std::cout << msg << std::endl;
+        std::cout <<"LOG: " << msg << std::endl;
     }
 }
 

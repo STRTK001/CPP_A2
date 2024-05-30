@@ -2,7 +2,6 @@
 
 #include <iostream>
 
-
 HospitalAlertSystemFacade::HospitalAlertSystemFacade()
 { }
 
@@ -17,4 +16,9 @@ void HospitalAlertSystemFacade::sendAlertForPatient(Patient* p)
         std::cout << "This is an alert to the hospital:" << std::endl;
         std::cout << "Patient: " << p->humanReadableID() << " has a critical alert level" << std::endl;
     }
+}
+
+void HospitalAlertSystemFacade::update(Patient* patient)
+{
+    sendAlertForPatient(patient);
 }

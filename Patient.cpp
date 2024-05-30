@@ -6,6 +6,7 @@
 #include <iomanip>
 #include <sstream>
 
+#include "PatientAlertListener.h"
 
 using namespace std;
 
@@ -110,8 +111,26 @@ void Patient::setAlertLevel(AlertLevel level)
             break;
         case AlertLevel::Red:
             cout << "Red";
+            //notify all listeners
+            updateListeners();
             break;
         }
         cout << endl;
+    }
+}
+
+void Patient::addListener(std::weak_ptr<PatientAlertListener> listener)
+{
+    _listeners.push_back(listener);
+}
+
+void Patient::updateListeners()
+{
+    for (int i = 0; i < _listeners.size(); i++)
+    {
+        if (auto listenerPtr = _listeners[i].lock())
+        {
+            listenerPtr->update(this);
+        }
     }
 }
