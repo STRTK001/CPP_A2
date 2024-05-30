@@ -1,0 +1,14 @@
+Amogus sus 
+	Heart rate (HR) > 200 YELLOW
+	Heart rate (HR) > 210 ORANGE
+	Heart rate (HR) > 220 RED
+E Rush
+	Body temperature (BT) > 38 and brain activity (BA) > 100 YELLOW
+	Body temperature (BT) > 38 and brain activity (BA) > 110 RED
+Nocap Syndrome
+	Oxygen saturation (SP02) < 94 YELLOW
+	Oxygen saturation (SP02) < 92 ORANGE
+	Oxygen saturation (SP02) < 90 RED
+Ticctocc Brain Damage 
+	Age < 35 and brain activity (BA) < 10 RED
+ 	Age >= 35 and brain activity (BA) >= 20 RED

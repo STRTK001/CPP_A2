@@ -12,7 +12,7 @@ class AbstractPatientDatabaseLoader;
 class HospitalAlertSystemFacade;
 class GPNotificationSystemFacade;
 class Patient;
-
+class DiseaseAlertLevelCalculator;
 
 class PatientManagementSystem
 {
@@ -32,6 +32,8 @@ public:
     void printMainMenu() const;
     void printPatients() const;
 
+    
+
 protected:
     std::vector<Patient*> _patients;
     std::map<std::string, Patient*> _patientLookup;
@@ -40,6 +42,8 @@ protected:
     std::unique_ptr<GPNotificationSystemFacade> _gpNotificationSystem;
 
     std::unique_ptr<AbstractPatientDatabaseLoader> _patientDatabaseLoader;
+
+    std::unique_ptr<DiseaseAlertLevelCalculator> _diseaseAlertLevelCalculator;
 
 };
 
