@@ -3,6 +3,10 @@
 
 #include "PatientAlertLevels.h"
 #include <iostream>
+#include <vector>
+#include <sstream>
+
+//namespace for my utility junk.
 namespace strtk001Utils
 {
 	inline std::string enumToString(AlertLevel en)
@@ -24,6 +28,19 @@ namespace strtk001Utils
     {
         std::cout <<"LOG: " << msg << std::endl;
     }
+
+    inline std::vector<std::string> splitString(const std::string& str, char delimiter)
+    {
+        std::stringstream ss(str);
+        std::vector<std::string> tokens;
+        std::string token;
+        while (std::getline(ss, token, delimiter))
+        {
+            tokens.push_back(token);
+        }
+        return tokens;
+    }
+
 }
 
 

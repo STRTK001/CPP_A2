@@ -16,6 +16,8 @@
 #include "DiseaseAlertLevelCalculator.h"
 #include "PatientAlertListener.h"
 
+#include "PatientFileLoaderAdapter.h"
+
 
 #include "Utility.h"
 
@@ -23,8 +25,9 @@ using namespace std;
 
 
 PatientManagementSystem::PatientManagementSystem() :
-    _patientDatabaseLoader(std::make_unique<PatientCSVLoaderAdapter>("patients.txt"))
-    /*_patientDatabaseLoader(std::make_unique<PatientDatabaseLoader>())*/ ,
+    /*_patientDatabaseLoader(std::make_unique<PatientCSVLoaderAdapter>("patients.txt")* / ) //this was my inital impl of the adapter class b4 i found that PatientFileLoader wasnt PatientDatabaseLoader
+    /*_patientDatabaseLoader(std::make_unique<PatientDatabaseLoader>())*/ //original PatientDatabaseLoader
+    _patientDatabaseLoader(std::make_unique<PatientFileLoaderAdapter>("patients.txt")),
     _hospitalAlertSystem(std::make_shared<HospitalAlertSystemFacade>()),
     _gpNotificationSystem(std::make_shared<GPNotificationSystemFacade>()),
     _diseaseAlertLevelCalculator(std::make_unique<DiseaseAlertLevelCalculator>())
