@@ -16,6 +16,8 @@ public:
 
     virtual void closeConnection() override;
 
+private:
+
 };
 
 #endif
