@@ -25,7 +25,7 @@ using namespace std;
 
 
 PatientManagementSystem::PatientManagementSystem() :
-    /*_patientDatabaseLoader(std::make_unique<PatientCSVLoaderAdapter>("patients.txt")* / ) //this was my inital impl of the adapter class b4 i found that PatientFileLoader wasnt PatientDatabaseLoader
+    /*_patientDatabaseLoader(std::make_unique<PatientCSVLoaderAdapter>("patients.txt")* / ) //this was my inital impl of the adapter class b4 i realised that PatientFileLoader wasnt PatientDatabaseLoader
     /*_patientDatabaseLoader(std::make_unique<PatientDatabaseLoader>())*/ //original PatientDatabaseLoader
     _patientDatabaseLoader(std::make_unique<PatientFileLoaderAdapter>("patients.txt")),
     _hospitalAlertSystem(std::make_shared<HospitalAlertSystemFacade>()),

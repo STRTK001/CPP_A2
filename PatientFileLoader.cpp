@@ -113,7 +113,7 @@ std::vector<Patient*> PatientFileLoader::loadPatientFile()
 			}
 			//add the patient to the patient vector
 			patients.push_back(patient);
-			strtk001Utils::logError("created: " + patients.back()->humanReadableID());
+			//strtk001Utils::logError("created: " + patients.back()->humanReadableID());
 		}
     }
     return patients;

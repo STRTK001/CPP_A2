@@ -18,7 +18,6 @@ void GPNotificationSystemFacade::sendGPNotificationForPatient(Patient* p)
     }
 }
 
-
 void GPNotificationSystemFacade::update(Patient* patient)
 {
     sendGPNotificationForPatient(patient);
